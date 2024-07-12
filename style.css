@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  color: black;
+  background-position: center;
+  font-family: 'Poppins',sans-serif;
+  margin: 0;
+  font-size: 4vh;
+  height:100vh;
+  
+  /* Calibre-R */
+}
+
+h1, p, h3, ul{
+  padding: 1.2em 1.2em .2em 2em;
+  margin: 0em 8vw;
+}
+
+hr{
+  padding: 0em 1.4em 0em 1.4em;
+}
+
+h3#signature{
+  float:right;
+  margin: 1.2em 0em 0.4em 0em;
+}
+
+h1#HeaderElement{
+  margin:2% 0em 0px 2%;
+}
+
+h1{
+  font-weight:400;
+  line-height:1.1;
+  font-size:min(2em, 6vw);
+}
+p{
+  text-indent: 1.8em;
+  font-size:min(1.2em, 6vw);
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 0px 12px;
+}
+
+div.hobbies{
+  display: inline-block;
+  margin:.5vh 0vw 2vh 4vw
+}
+
+div.hobbies > span{
+  display: inline-block;
+  position: relative;
+  bottom: 5vh;
+  right: -5vw;
+  width: 40vw;
+  font-size: 2vh;
+}
+
+div.hobbies img{
+  height: 35vh;
+  width: 35vh;
+  border-radius: 50%;
+  border-style: solid;
+  padding: 0px, .2vw .2vh .4vw;
+  object-fit: cover;
+}
+
+div.hobbies img[src="./images/programming.png"]{
+  object-position: 0px;
+}
+
+@media only screen and (max-width: 700px){
+
+
+  div.hobbies img{
+    height: 20vh;
+    width: 20vh;
+    position: relative;
+    bottom:20vh;
+    border-radius: 50%;
+    border-style: solid;
+    padding: 0px, .2vw .2vh .4vw;
+  }
+
+  div.hobbies > span{
+    font-size: 2vh;
+  }
+}
+
+.navbar {
+  /* the Menu Bar Itself */
+  overflow-x: auto;
+  overflow-y: hidden;
+  /* background-color: #F9F9F9; */
+  background-color: seashell;
+  font-size:1em;
+  display: flex;
+  position:fixed;
+  flex-flow: row nowrap;
+  justify-content: left;
+  align-content: flex-start;
+  width: 100%;
+  max-height:min(20vh, 20%);
+  text-align: center;
+  box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.6);
+  z-index:20;
+  white-space:nowrap;
+}
+
+.navbar a, .seperator{
+  /* sets the properties of the navbar <a> */
+  float: left;
+  line-height: 4em;
+  font-size: .75em;
+  max-height:5vh;
+  color: black;
+  margin: 1vh;
+  padding: 4vh .5vw;
+  margin: 0px 3px 2px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  font-weight:600;
+  line-height:1.1;
+}
+
+
+.navbar a:hover, a#aboutButton:hover{
+  background-color: lightblue;
+  color: inherit;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  /* transform: scale(1.05, 1.05); */
+}
+
+
+#ORAS {
+  font-size: 5vh;
+  font-weight: bold;
+  font-family: 'Consolas';
+  letter-spacing: -.5px;
+  background-color: DarkSlateGrey !important;
+  position: relative;
+  top:2vh;
+  width: 20%;
+  height: 50%;
+  color: whitesmoke !important;
+  padding: 4px 18px;
+  margin: -2px 5px;
+  border-style: solid;
+  border-radius: 40px; 
+}
+
+
+@media only screen and (max-width: 700px){
+
+  body{
+    font-size: .8vh;
+  }
+
+  h1#HeaderElement{
+    margin:12vh 0em 12px 0;
+  }
+
+  .navbar {
+    /* the Menu Bar Itself */
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* background-color: #F9F9F9; */
+    background-color: seashell;
+    font-size:1em;
+    display: flex;
+    position:fixed;
+    flex-flow: row nowrap;
+    justify-content: left;
+    align-content: flex-start;
+    width: 100%;
+    max-height:min(20vh, 20%);
+    text-align: center;
+    box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.6);
+    z-index:20;
+    white-space:nowrap;
+  }
+  
+  .navbar a, .seperator{
+    /* sets the properties of the navbar <a> */
+    float: left;
+    line-height: 4em;
+    font-size: 1em;
+    max-height:5vh;
+    color: black;
+    margin: 2vh;
+    padding: 2vh .33vw;
+    margin: 0px 3px 2px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight:600;
+    
+  }
+  
+  
+  .navbar a:hover, a#aboutButton:hover{
+    background-color: lightblue;
+    color: inherit;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    /* transform: scale(1.05, 1.05); */
+  }
+
+  #ORAS {
+    font-size: inherit;
+    top:3vh;
+  }
+  
+}
+
+
+
+
+
+.mainContainer{
+  Border: 0;
+  margin: 0 0 0 0;
+  position:relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
+  overflow:visible;
+  width: 100%;
+  box-shadow: 0px 6px 6px 6px rgba(0, 0, 0, 0.2) inset;
+}
+
+div#mainBackground{
+  position:fixed;
+  height:100%;
+  width:100%;
+  background-image:url('./images/bg5.png'),
+    url('./images/bg5midres.jpg'),
+    url('./images/bg5superlowres.jpg'),
+    url('https://images.unsplash.com/photo-1524661135-423995f22d0b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDk5NzY1Nzh8&ixlib=rb-4.0.3&q=85');
+  background-repeat: repeat;
+  background-size: 380vh;
+  background-attachment: auto;
+  background-position: 0px 0px;
+  animation: SlowPan infinite linear 400s, invitovisi normal ease-out 4s;
+  z-index:-10;
+}
+
+div.mainContentBackground, div.mainContent{
+  top:2vw;
+  left:6vw;
+  width: 80%;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2)
+}
+
+div.mainContentBackground{
+  height: 100vh;
+  position:fixed;
+  background-color:white;
+  z-index:5;
+}
+
+div.mainContent{
+  color:black;
+  position:absolute;
+  overflow-y:visible;
+  height: auto;
+  z-index:10;
+/*   border: 5px solid red; */
+/*   margin:5vh 0 0 12vh; */
+/*   padding:0; */
+/*   width: min(70vw, 70%); */
+}
+
+
+
+a#aboutButton{
+  font-weight:800;
+  line-height:1.1;
+  text-decoration:none;
+  color: inherit;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+/* --------------------------------------
+Animations css
+--------------------------------------*/
+
+ @keyframes SlowPan {
+  from {
+    background-position: 0% 0%;
+    
+  }
+
+  to {
+    background-position: 1000% 0%;
+  }
+}
+
+@keyframes invitovisi {
+  from {
+    opacity:0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+}
+

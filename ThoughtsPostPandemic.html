@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<meta charset="UTF-8">
+		<title>Home Page</title>
+		<link rel="stylesheet" href="./style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/x-icon" href="./images/favicon.ico.png">
+        <script src="script.js"></script>
+	</head>
+
+	<body onload="startTime()">
+		<!-- NAVBAR BEGIN -->
+		<div class="navbar">
+			<a href="./index.html" target="_parent">Home</a> <div class="seperator">|</div>
+			<a href="./aboutpage.html" target="_parent">About</a> <div class="seperator">|</div>
+			<a href="./Gallery.html" target="_parent"> Gallery</a> <div class="seperator">|</div>
+			<a href="./Hobbies.html" target="_parent">Hobbies</a> <div class="seperator">|</div>
+			<a href="./ThoughtsPostPandemic.html" target="_parent">Thoughts on life post-pandemic</a><div class="seperator">|</div>
+			<div id="ORAS"><div id="PT"></div></div>
+		</div>
+		<!-- NAVBAR END -->
+
+		<div class="mainContainer">
+			<div id="mainBackground"></div>
+			<div class="mainContentBackground"></div>
+			<div class="mainContent">
+				<!-- MAIN STUFF GOES HERE     -->
+				<h1 id="HeaderElement">Post Pandemic Thoughts</h1>
+				<hr>
+				<p> The Pandemic really shook our lives in many different ways.
+                For me it broke a cycle of monotomy in my life and it was the first time I really had time to think about where my life was headed.
+                It made me think of the ways my life could lead now that I was entering Senior High School. It was during the pandemic that I had first
+                chosen ICT which led me to first take a serious interest in Programming. During the Pandemic I had all the time to research and better myself.
+                I also learned some skills during and after thePandemic. Had the Pandemic never happened, who know.
+                </p>
+                <p>
+                    I used to watch a now deleted channel during the Pandemic and the height of Lockdown here in Quezon City about two Youtuber trying to leave by the maximu
+                    <q>Memento Mori</q>. I often think of the lesson I learned from those videos which were partially shaped by the Global Pandemic.It made me ask what was I doing 
+                    with the Time that I was alloted with.
+                </p>
+				<h3 id="signature">-Krystian</h3>
+				<!-- MAIN STUFF GOES ABOVE     -->
+			</div>
+		</div>
+        <script>
+            function startTime() {
+              const today = new Date();
+              let m = today.getMinutes();
+              let s = today.getSeconds();
+              let THH = today.getHours();
+              let TH = AmPm(THH);
+
+              m = checkTime(m);
+              s = checkTime(s);
+
+              TH = checkTime(TH);
+
+              let t = arrange(TH, m, s);
+
+              t = MeridianSet(THH, t);
+
+              document.getElementById('PT').innerHTML = t;
+              setTimeout(startTime, 1000);
+              }
+
+              function checkTime(i) {
+              if (i < 10) {
+              i = "0" + i
+              };
+              return i;
+              }
+
+              function AmPm(q) {
+
+              if (q > 12) {
+              q = q - 12
+              } else if (q < 1) {
+              q = q + 12;
+              }
+              return q;
+              }
+
+              function arrange(h, m, s) {
+              let v = h + "&nbsp:&nbsp" + m + "&nbsp:&nbsp" + s;
+              return v;
+              }
+
+              function MeridianSet(q, v) {
+              q >= 12 || q <= 0 ? v += "&nbsp PM" : v += "&nbsp AM";
+              return v;
+              }
+        </script>
+	</body>
+</html>
