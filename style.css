@@ -115,7 +115,7 @@ div.ascii{
   font-size: 30%;
   font-family: 'Courier New', Courier, monospace;
   text-indent: 0;
-  color: darkgreen;
+  /* color: darkgreen; */
   /* background-color:steelblue; */
 
 }
