@@ -50,7 +50,7 @@ details{
   /* text-indent: 1.8em; */
   border: 1px solid #aaa;
   border-radius: 4px;
-  margin:-0.8em 58vw 0em 2.4em; 
+  margin:-0.8em 5vw 0em 2.4em;
   transition: margin .5s ease-in-out;
   /* padding: .2em 0.3em 0.2em 0.3em;
   margin: 0em 20em 0em 1.5em; */
@@ -70,12 +70,13 @@ details[open] > p{
 
 details[open] > summary{
   border-bottom: 1px solid #aaa;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  padding-right: 0px;
 }
 
 details[open]{
   /* text-justify: inter-word; */
-  margin:-0.8em 1.5vw 0em 2.4em; 
+  margin:-0.8em 5vw 0em 2.4em; 
   border-bottom: 1px solid #aaa;
 } 
 
