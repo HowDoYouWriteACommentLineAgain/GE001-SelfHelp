@@ -36,11 +36,11 @@ function startTime() {
     }
 
     function arrange(h, m, s) {
-    let v = h + "&nbsp:&nbsp" + m + "&nbsp:&nbsp" + s;
+    let v = h + ":" + m + ":" + s;
     return v;
     }
 
     function MeridianSet(q, v) {
-    q >= 12 || q <= 0 ? v += "&nbsp PM" : v += "&nbsp AM";
+    q >= 12 || q <= 0 ? v += "PM" : v += "AM";
     return v;
     }

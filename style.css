@@ -177,7 +177,7 @@ div.hobbies img[src="./images/programming.png"]{
   font-size: 5vh;
   font-weight: bold;
   font-family: 'Consolas';
-  letter-spacing: -.5px;
+  letter-spacing: .4rem;
   background-color: DarkSlateGrey !important;
   position: relative;
   top:2vh;
