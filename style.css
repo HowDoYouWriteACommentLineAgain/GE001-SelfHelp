@@ -56,7 +56,7 @@ details{
   margin: 0em 20em 0em 1.5em; */
 }
 
-summary{
+details summary{
   /* margin: 0px .5em; */
   /* text-justify: inter-word; */
   margin: 0em 0em;
@@ -66,6 +66,7 @@ summary{
 
 details[open] > p{
   margin-left: 1.6em;
+  padding: 0em 1.2em .2em 0em;
 }
 
 details[open] > summary{
