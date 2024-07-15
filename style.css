@@ -97,6 +97,12 @@ details > summary{
 
 }
 
+summary > *{
+  margin: 0;
+  padding: 0;
+  font-size: 4vh;
+}
+
 details[open] > p{
   margin-left: 1.6em;
   padding: 0em 1.2em .2em 0em;
