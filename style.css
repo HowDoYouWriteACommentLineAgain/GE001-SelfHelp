@@ -68,7 +68,9 @@ p{
   margin: 0px 12px;
 }
 
-
+h2{
+  text-indent: 2em;
+}
 
 details{
   border: 1px solid #aaa;
