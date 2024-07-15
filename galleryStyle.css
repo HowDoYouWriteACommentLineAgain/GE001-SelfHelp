@@ -14,6 +14,11 @@ div.gallery img {
   object-fit: cover;
 }
 
+img{
+  object-fit: cover;
+  width: 100%;
+}
+
 div.desc {
   font-size: .4vw;
   height: 12vh;
