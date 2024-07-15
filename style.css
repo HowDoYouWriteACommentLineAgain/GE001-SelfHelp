@@ -101,6 +101,10 @@ details > summary{
 
 }
 
+summary{
+  font-weight: bold;
+}
+
 summary > *{
   margin: 0;
   padding: 0;
